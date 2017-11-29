@@ -5,10 +5,6 @@ window.onload = () => {
   m = new MersenneTwister();
   overlay = document.getElementById('overlay');
 
-  document.body.addEventListener('click', function onClick() {
-    alert('clicked');
-  }, false);
-
   var diceContainer = document.querySelector('main');
   var dice = diceContainer.querySelectorAll('.die');
 
@@ -21,6 +17,7 @@ window.onload = () => {
 };
 
 function beginDiceRoll(e) {
+  alert('clicked');
   var el = e.target;
   var min = 1;
   var max = parseInt(el.dataset.die);
