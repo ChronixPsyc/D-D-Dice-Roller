@@ -113,9 +113,3 @@ section .die[data-die="4"] {
 #overlay.visible .container {
   top: 50%;
 }
-
-#overlay b {
-  position: absolute;
-  top: 10%;
-  right: 6%;
-}

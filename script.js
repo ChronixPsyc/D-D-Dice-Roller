@@ -9,7 +9,7 @@ window.onload = () => {
   var dice = diceContainer.querySelectorAll('.die');
   var closeBtn = overlay.querySelector('b');
 
-  closeBtn.addEventListener('click', hideOverlay, false);
+  overlay.addEventListener('click', hideOverlay, false);
 
   for(var i = 0; i < dice.length; i++) {
     dice[i].addEventListener('click', beginDiceRoll, false);
