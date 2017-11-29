@@ -7,7 +7,6 @@ window.onload = () => {
 
   var diceContainer = document.querySelector('main');
   var dice = diceContainer.querySelectorAll('.die');
-  var closeBtn = overlay.querySelector('b');
 
   overlay.addEventListener('click', hideOverlay, false);
 
