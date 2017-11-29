@@ -49,10 +49,6 @@ section {
     flex: 0 1 45%;
     height: 100%;
     background: no-repeat transparent 50% 50% / contain;
-
-    * {
-      pointer-events: none;
-    }
     
     &[data-die="20"] { background-image: url('images/d20.png'); }
     &[data-die="12"] { background-image: url('images/d12.png'); }

@@ -47,10 +47,6 @@ section .die {
   background: no-repeat transparent 50% 50% / contain;
 }
 
-section .die * {
-  pointer-events: none;
-}
-
 section .die[data-die="20"] {
   background-image: url("images/d20.png");
 }
