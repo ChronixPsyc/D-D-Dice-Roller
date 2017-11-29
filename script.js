@@ -5,6 +5,10 @@ window.onload = () => {
   m = new MersenneTwister();
   overlay = document.getElementById('overlay');
 
+  document.body.addEventListener('click', function onClick() {
+    alert('clicked');
+  }, false);
+
   var diceContainer = document.querySelector('main');
   var dice = diceContainer.querySelectorAll('.die');
 
