@@ -17,7 +17,7 @@ window.onload = () => {
 };
 
 function beginDiceRoll(e) {
-  alert('clicked');
+  alert(e.target.className);
   var el = e.target;
   var min = 1;
   var max = parseInt(el.dataset.die);
@@ -29,6 +29,7 @@ function showOutput(num) {
   var output = 'You rolled a ' + num + '!'
   overlay.querySelector('span').innerHTML = output;
   overlay.classList.add('visible');
+  alert(output);
 }
 
 function hideOverlay() {
