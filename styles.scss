@@ -48,7 +48,11 @@ section {
   .die {
     flex: 0 1 45%;
     height: 100%;
-    background: no-repeat rgba(255, 255, 255, 1) 50% 50% / contain;
+    background: no-repeat transparent 50% 50% / contain;
+
+    * {
+      pointer-events: none;
+    }
     
     &[data-die="20"] { background-image: url('images/d20.png'); }
     &[data-die="12"] { background-image: url('images/d12.png'); }
@@ -69,7 +73,6 @@ section {
   opacity: 0;
   pointer-events: none;
   transition: opacity 125ms linear;
-  display: none;
 
   .container {
     position: absolute;
@@ -96,5 +99,11 @@ section {
     .container {
       top: 50%;
     }
+  }
+
+  b {
+    position: absolute;
+    top: 10%;
+    right: 6%;
   }
 }

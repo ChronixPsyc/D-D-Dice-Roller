@@ -44,7 +44,11 @@ section {
 section .die {
   flex: 0 1 45%;
   height: 100%;
-  background: no-repeat white 50% 50%/contain;
+  background: no-repeat transparent 50% 50% / contain;
+}
+
+section .die * {
+  pointer-events: none;
 }
 
 section .die[data-die="20"] {
@@ -81,7 +85,6 @@ section .die[data-die="4"] {
   opacity: 0;
   pointer-events: none;
   transition: opacity 125ms linear;
-  display: none;
 }
 
 #overlay .container {
@@ -109,4 +112,10 @@ section .die[data-die="4"] {
 
 #overlay.visible .container {
   top: 50%;
+}
+
+#overlay b {
+  position: absolute;
+  top: 10%;
+  right: 6%;
 }
