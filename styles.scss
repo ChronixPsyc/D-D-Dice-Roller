@@ -73,6 +73,7 @@ section {
   opacity: 0;
   pointer-events: none;
   transition: opacity 125ms linear;
+  display: none;
 
   * {
     pointer-events: none;
