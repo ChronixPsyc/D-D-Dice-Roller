@@ -1,15 +1,9 @@
 var m;
-var overlay
-
-  
+var overlay  
 
 window.onload = () => {
-  var date = new Date().getFullYear();
-
   m = new MersenneTwister();
   overlay = document.getElementById('overlay');
-
-  document.body.querySelector('footer span').innerHTML = date;
 
   var diceContainer = document.querySelector('main');
   var dice = diceContainer.querySelectorAll('.die');
