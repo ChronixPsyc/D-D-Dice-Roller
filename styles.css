@@ -44,7 +44,7 @@ section {
 section .die {
   flex: 0 1 45%;
   height: 100%;
-  background: no-repeat transparent 50% 50% / contain;
+  background: no-repeat white 50% 50%/contain;
 }
 
 section .die[data-die="20"] {
