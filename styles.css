@@ -87,6 +87,10 @@ section .die[data-die="4"] {
   transition: opacity 125ms linear;
 }
 
+#overlay * {
+  pointer-events: none;
+}
+
 #overlay .container {
   position: absolute;
   top: 30%;

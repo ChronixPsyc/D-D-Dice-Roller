@@ -74,6 +74,10 @@ section {
   pointer-events: none;
   transition: opacity 125ms linear;
 
+  * {
+    pointer-events: none;
+  }
+
   .container {
     position: absolute;
     top: 30%;
