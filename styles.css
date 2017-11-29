@@ -84,10 +84,6 @@ section .die[data-die="4"] {
   display: none;
 }
 
-#overlay * {
-  pointer-events: none;
-}
-
 #overlay .container {
   position: absolute;
   top: 30%;
